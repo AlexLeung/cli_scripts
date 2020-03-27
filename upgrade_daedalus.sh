@@ -12,5 +12,6 @@ fi
 # Install
 mkdir ~/.daedalus
 sudo chmod -R 757 ~/.daedalus
+sudo chmod -R 757 ~/.local
 
 sudo bash $1
