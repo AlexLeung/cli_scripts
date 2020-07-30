@@ -2,16 +2,16 @@
 
 echo $1
 
-if [ -d "~/.daedalus" ]
-then
-    chmod -R +w ~/.daedalus
-    rm -rf ~/.local/bin/daedalus* ~/.daedalus
-    rm -f ~/.local/share/applications/Daedalus*.desktop
+if [ -d "/home/alex/.daedalus" ]; then
+    chmod -R +w /home/alex/.daedalus
+    rm -rf /home/alex/.local/bin/daedalus* /home/alex/.daedalus
+    rm -f /home/alex/.local/share/applications/Daedalus*.desktop
+    echo "deleted"
 fi
 
 # Install
-mkdir ~/.daedalus
-sudo chmod -R 757 ~/.daedalus
-sudo chmod -R 757 ~/.local
+mkdir -p /home/alex/.daedalus
+sudo chmod -R 757 /home/alex/.daedalus
+sudo chmod -R 757 /home/alex/.local
 
 sudo bash $1
