@@ -4,8 +4,8 @@ echo $1
 
 if [ -d "/home/alex/.daedalus" ]; then
     chmod -R +w /home/alex/.daedalus
-    rm -rf /home/alex/.local/bin/daedalus* /home/alex/.daedalus
-    rm -f /home/alex/.local/share/applications/Daedalus*.desktop
+    sudo rm -rf /home/alex/.local/bin/daedalus* /home/alex/.daedalus
+    sudo rm -f /home/alex/.local/share/applications/Daedalus*.desktop
     echo "deleted"
 fi
 
@@ -15,3 +15,6 @@ sudo chmod -R 757 /home/alex/.daedalus
 sudo chmod -R 757 /home/alex/.local
 
 sudo bash $1
+
+sudo chmod -R 757 /home/alex/.daedalus
+sudo chmod -R 757 /home/alex/.local
